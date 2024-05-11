@@ -1,0 +1,338 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+@import "~bootswatch/dist/quartz/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/quartz/bootswatch";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: rgb(244, 244, 245);
+$border-radius: .4rem;
+$success: #7952b3;
+$primary: #c27716 !default;
+$secondary: #007968 !default;
+$info: #2f4858 !default;
+$btn-link-color: #fff;
+
+$theme-colors: ("primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "dark": #131313) !default;
+
+//
+// Custom styles
+//
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yMF84NikiPgogICAgICAgIDxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2ZfMjBfODYpIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEyOC42IDBIMFYzMjIuMkwxMDYuMiAxMzQuNzVMMTI4LjYgMFoiIGZpbGw9IiNGRjAwQjgiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTAgMzIyLjJWNDAwSDI0MEgzMjBMMTA2LjIgMTM0Ljc1TDAgMzIyLjJaIiBmaWxsPSIjRkZCODAwIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMjAgNDAwSDQwMFY3OC43NUwxMDYuMiAxMzQuNzVMMzIwIDQwMFoiIGZpbGw9IiNDOEYxQjUiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTQwMCAwSDEyOC42TDEwNi4yIDEzNC43NUw0MDAgNzguNzVWMFoiIGZpbGw9IiMwMDM3RkYiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZGVmcz4KICAgICAgICA8ZmlsdGVyIGlkPSJmaWx0ZXIwX2ZfMjBfODYiIHg9Ii0xNTkuOTMzIiB5PSItMTU5LjkzMyIgd2lkdGg9IjcxOS44NjciIGhlaWdodD0iNzE5Ljg2NyIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICAgICAgICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCI+PC9mZUZsb29kPgogICAgICAgICAgICA8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJzaGFwZSI+PC9mZUJsZW5kPgogICAgICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI3OS45NjY3IiByZXN1bHQ9ImVmZmVjdDFfZm9yZWdyb3VuZEJsdXJfMjBfODYiPjwvZmVHYXVzc2lhbkJsdXI+CiAgICAgICAgPC9maWx0ZXI+CiAgICA8L2RlZnM+Cjwvc3ZnPgo=") no-repeat;
+    background-size: cover;
+    //backdrop-filter: blur(6px);
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+header .altmagick-header-bar {
+    padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 10px;
+    border-radius: $border-radius;
+    backdrop-filter: saturate(200%) blur(5px);
+}
+
+header .altmagick-header-bar ul {
+    display: none;
+}
+
+header .altmagick-header-bar .header-buttons {
+    display: none;
+}
+
+.altmagick-pill {
+    border-radius: $border-radius;
+    padding: 10px;
+    background-color: #000000d9;
+    color: #fff;
+    width: auto;
+}
+
+@media (min-width: 576px) {
+    header .altmagick-header-bar {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    header .altmagick-header-bar {
+        max-width: 720px;
+    }
+
+    header .altmagick-header-bar ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    header .altmagick-header-bar {
+        max-width: 960px;
+    }
+
+    header .altmagick-header-bar .header-buttons {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    header .altmagick-header-bar {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    header .altmagick-header-bar {
+        max-width: 1320px;
+    }
+}
+
+.altmagick-head {
+    color: #fff;
+    border-radius: $border-radius;
+
+
+
+}
+
+.altmagick-head .altmagick-head-code {
+    background-color: #000 !important;
+}
+
+.more-indicator {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 35px;
+    font-size: 40px;
+    color: #141414;
+    animation: jump 3s linear alternate infinite;
+    opacity: 0.5;
+}
+
+code:not(pre code) {
+    background-color: $primary;
+    color: #fff;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.text-emphasis {
+    color: #fff !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+}
+
+
+.altmagick-head .bi {
+    display: inline-block;
+    vertical-align: -.125em;
+    fill: currentcolor;
+    width: 1em !important;
+    height: 1em !important;
+}
+
+.demo-video {
+    max-height: 20vh;
+    border-radius: $border-radius;
+}
+
+.demo-video-container {
+    background-color: rgba(194, 119, 22, 0.3);
+    padding: 15px;
+    border-radius: $border-radius;
+
+}
+
+#card-one {
+    background-color: #c8564b;
+    color: #fff;
+}
+
+#card-two {
+    background-color: #ac4c71;
+    color: #fff;
+}
+
+#card-three {
+    background-color: #795081;
+    color: #fff;
+}
+
+#card-four {
+    background-color: #465075;
+    color: #fff;
+}
+
+#card-five {
+    background-color: #2f4858;
+    color: #fff;
+}
+
+#card-six {
+    background-color: #007968;
+    color: #fff;
+}
+
+#card-try {
+    background-color: #ededed;
+    color: $body-color;
+}
+
+#card-buy {
+    background-image: linear-gradient(156deg, #d1924d 35%, #f89a2b 100%);
+}
+
+#card-past {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c35353;
+    color: #fff;
+}
+
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    color: $primary;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+}
+
+.img-fluid {
+    border-radius: $border-radius;
+}
+
+.tab-content {
+    display: block;
+    border-radius: $border-radius;
+
+
+    padding: 1em;
+}
+
+#pills-tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-pills .nav-link {
+    margin: 0 4px;
+    flex-grow: 1;
+    border-radius: $border-radius;
+}
+
+.btn-chrome {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.btn-chrome:hover {
+    background-color: #1867cf;
+}
+
+.btn-chrome:focus, .btn-chrome:focus-visible, .btn-chrome:active, .btn-chrome.focus, .btn-chrome.focus-visible, .btn-chrome.active {
+    background-color: #1458b3 !important;
+}
+
+.btn-firefox {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.btn-firefox:hover {
+    background-color: #ea5b00;
+}
+
+.btn-firefox:focus, .btn-firefox:focus-visible, .btn-firefox:active, .btn-firefox.focus, .btn-firefox.focus-visible, .btn-firefox.active {
+    background-color: #d85301 !important;
+}
+
+.profile img {
+    height: 50px;
+    border-radius: $border-radius;
+}
+
+.accordion-item {
+    background-image: none;
+}
+
+.accordion-body {
+    background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2) 70%);
+}
+
+.footer {
+    border: none;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2), inset -1px -1px rgba(255, 255, 255, 0.1), 1px 3px 24px -1px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2) 70%);
+    backdrop-filter: blur(5px);
+    border-radius: $border-radius;
+    padding: 2rem;
+}

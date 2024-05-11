@@ -1,0 +1,16 @@
+# HTTPS redirection
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+
+# Redirect /chrome to the Google Chrome extension
+RewriteRule ^extension/chrome$ https://chromewebstore.google.com [L,R=301]
+
+# Redirect /firefox to the Mozilla Firefox extension
+RewriteRule ^extension/firefox$ https://addons.mozilla.org/ [L,R=301]
+
+# Redirect /help to the help e-mail
+RewriteRule ^help$ mailto:gaetan@altmagick.com [L,R=301]
+
+# No indexes
+Options -Indexes

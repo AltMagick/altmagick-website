@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>AltMagick - Generate alt text like a magician</title>
+    <meta content="Generate alt text like a magician" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="./assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <meta content="altmagick" name="application-name"/>
+    <meta content="altmagick" name="apple-mobile-web-app-title"/>
+    <meta content="#c27716" name="theme-color"/>
+    <link href="./assets/manifest.webmanifest" rel="manifest"/>
+    <link href="./assets/images/android-chrome-36x36.png" rel="icon" sizes="36x36" type="image/png"/>
+    <link href="./assets/images/android-chrome-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+    <link href="./assets/images/android-chrome-72x72.png" rel="icon" sizes="72x72" type="image/png"/>
+    <link href="./assets/images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+    <link href="./assets/images/android-chrome-144x144.png" rel="icon" sizes="144x144" type="image/png"/>
+    <link href="./assets/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+    <link href="./assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="./assets/images/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+    <link href="./assets/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+    <link href="./assets/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+    <link href="./assets/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+    <link href="./assets/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+    <link href="./assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+    <link href="./assets/images/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+    <meta content="website" property="og:type">
+    <meta content="AltMagick" property="og:title">
+    <meta content="https://altmagick.com" property="og:url">
+    <meta content="https://altmagick.com/assets/images/og.jpg" property="og:image">
+    <meta content="Generate alt text like a magician" property="og:description">
+</head>
+
+<body class="pt-5">
+<div class="container">
+    <header class="d-flex align-items-center justify-content-center fixed-top">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between w-100 py-2 mb-2 altmagick-header-bar">
+            <div class="d-flex col-md-3 mb-md-0">
+                <a class="d-inline-flex text-decoration-none" href="/">
+                    <img alt="icon" class="me-1" height="40" src="assets/images/altmagick.png" width="40">
+                    <span class="fs-4">AltMagick</span>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2" href="#why">Why AltMagick?</a></li>
+                <li><a class="nav-link px-2" href="#howitworks">How it works?</a></li>
+                <li><a class="nav-link px-2" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link px-2" href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end header-buttons">
+                <a class="btn btn-primary" href="#pricing">
+                    <svg class="bi bi-rocket-takeoff-fill" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z"/>
+                        <path d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z"/>
+                    </svg>
+                    Let the magic begin!</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-3 p-4 card container">
+        <div class="row">
+            <div class="col-md-7 d-flex flex-column align-items-start justify-content-center">
+                <div class="altmagick-pill text-center mb-2">
+                    🚀 AltMagick is now available!
+                </div>
+                <h1 class="display-4 fw-bold text-body-emphasis mb-2"><span class="text-emphasis">Writing
+                        <svg fill="currentColor" height="55" viewBox="0 0 16 16" width="55"
+                             xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+  <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/>
+</svg>
+
+                        <svg fill="currentColor" height="55" viewBox="0 0 16 16" width="55"
+                             xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+</svg>
+                        alt text</span><br> will no longer be a pain.
+                </h1>
+                <p class="lead">AltMagick is a simple, easy-to-use browser extension that lets you right-click on any
+                    image and get alt text to copy and paste.<br>
+                    Use it on your websites (WordPress, Webflow, ...) or on your social networks to improve SEO and
+                    accessibility.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-start">
+                    <a class="btn btn-chrome btn-lg px-4 me-md-2 fw-bold" href="/extension/chrome" type="button">
+                        <svg class="bi bi-browser-chrome" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        Get AltMagick for Chrome</a>
+                    <a class="btn btn-firefox btn-lg px-4 me-md-2 fw-bold" href="/extension/firefox" type="button">
+                        <svg class="bi bi-browser-firefox" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.384 3.408c.535.276 1.22 1.152 1.556 1.963a8 8 0 0 1 .503 3.897l-.009.077-.026.224A7.758 7.758 0 0 1 .006 8.257v-.04q.025-.545.114-1.082c.01-.074.075-.42.09-.489l.01-.051a6.6 6.6 0 0 1 1.041-2.35q.327-.465.725-.87.35-.358.758-.65a1.5 1.5 0 0 1 .26-.137c-.018.268-.04 1.553.268 1.943h.003a5.7 5.7 0 0 1 1.868-1.443 3.6 3.6 0 0 0 .021 1.896q.105.07.2.152c.107.09.226.207.454.433l.068.066.009.009a2 2 0 0 0 .213.18c.383.287.943.563 1.306.741.201.1.342.168.359.193l.004.008c-.012.193-.695.858-.933.858-2.206 0-2.564 1.335-2.564 1.335.087.997.714 1.839 1.517 2.357a4 4 0 0 0 .439.241q.114.05.228.094c.325.115.665.18 1.01.194 3.043.143 4.155-2.804 3.129-4.745v-.001a3 3 0 0 0-.731-.9 3 3 0 0 0-.571-.37l-.003-.002a2.68 2.68 0 0 1 1.87.454 3.92 3.92 0 0 0-3.396-1.983q-.116.001-.23.01l-.042.003V4.31h-.002a4 4 0 0 0-.8.14 7 7 0 0 0-.333-.314 2 2 0 0 0-.2-.152 4 4 0 0 1-.088-.383 5 5 0 0 1 1.352-.289l.05-.003c.052-.004.125-.01.205-.012C7.996 2.212 8.733.843 10.17.002l-.003.005.003-.001.002-.002h.002l.002-.002h.015a.02.02 0 0 1 .012.007 2.4 2.4 0 0 0 .206.48q.09.153.183.297c.49.774 1.023 1.379 1.543 1.968.771.874 1.512 1.715 2.036 3.02l-.001-.013a8 8 0 0 0-.786-2.353"/>
+                        </svg>
+                        Get AltMagick for Firefox</a>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
+                <div class="ratio ratio-1x1">
+                    <video autoplay class="rounded-1" loop muted src="./assets/videos/demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card flex-fill text-center p-1 w-50" id="card-past">
+        <div class="card-body d-flex flex-column justify-content-center">
+            <h4 class="card-title">Why keep making things complicated?</h4>
+            <ul class="m-0 p-0 list-unstyled">
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-x-lg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    Difficulty describing images 🤔
+                </li>
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-x-lg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    The right words just don't come 🤐
+                </li>
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-x-lg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    The delicate balance between brevity and clarity ⚖️
+                </li>
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-x-lg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    Time-consuming task ⏳
+                </li>
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-x-lg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                    Risk of forgetting 🤦‍♂️
+                </li>
+                <li class="d-flex flex-row align-items-center gap-1">
+                    <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewBox="0 0 16 16"
+                         width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                              fill-rule="evenodd"/>
+                    </svg>
+                    Waste of time and pain
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center align-items-center mt-2 mb-1">
+        <svg class="bi bi-arrow-down" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                  fill-rule="evenodd"/>
+        </svg>
+        There is an easier way.
+    </div>
+    <div class="p-3 pt-0 m-5 mt-0 mb-0">
+
+        <h2 class="display-3 pb-0 mb-0" id="why">Save time and improve SEO and accessibility</h2>
+        <p class="lead">Waste less time while improving your SEO as well as the accessibility of your website and social
+            network accounts.</p>
+
+        <div class="mb-1">
+            <ul class="nav nav-pills mb-1 d-flex" id="pills-tab" role="tablist">
+                <li class="d-flex nav-item justify-content-center align-items-center" role="presentation">
+                    <button aria-controls="pills-easy" aria-selected="true" class="nav-link active border"
+                            data-bs-target="#pills-easy" data-bs-toggle="pill" id="pills-easy-tab" role="tab"
+                            type="button">
+                        <svg class="bi bi-hand-thumbs-up-fill" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                        </svg>
+                        <br>Easy to use
+                    </button>
+                </li>
+                <li class="d-flex nav-item justify-content-center align-items-center" role="presentation">
+                    <button aria-controls="pills-fast" aria-selected="false" class="nav-link border"
+                            data-bs-target="#pills-fast" data-bs-toggle="pill" id="pills-fast-tab" role="tab"
+                            type="button">
+                        <svg class="bi bi-speedometer" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2M3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
+                            <path d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.95 11.95 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        <br>Fast
+                    </button>
+                </li>
+                <li class="d-flex nav-item justify-content-center align-items-center" role="presentation">
+                    <button aria-controls="pills-secure" aria-selected="false" class="nav-link border"
+                            data-bs-target="#pills-secure" data-bs-toggle="pill" id="pills-secure-tab" role="tab"
+                            type="button">
+                        <svg class="bi bi-lock-fill" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                        </svg>
+                        <br>Secure & Private
+                    </button>
+                </li>
+                <li class="d-flex nav-item justify-content-center align-items-center" role="presentation">
+                    <button aria-controls="pills-ethics" aria-selected="false" class="nav-link border"
+                            data-bs-target="#pills-ethics" data-bs-toggle="pill" id="pills-ethics-tab" role="tab"
+                            type="button">
+                        <svg class="bi bi-tree-fill" fill="currentColor" height="16" viewBox="0 0 16 16"
+                             width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"/>
+                        </svg>
+                        <br>Ethics
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div aria-labelledby="pills-easy-tab" class="tab-pane fade show active card p-2" id="pills-easy"
+                     role="tabpanel" tabindex="0">
+                    <p class="lead">Easy to use</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Right-click on an image and then click on the AltMagick icon: that's it!
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            A single extension that can be used everywhere
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Automatic copying to the alt text clipboard: guaranteed simplicity and efficiency
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Compatible with all common image formats
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Simple language configuration (40+ languages supported)
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                            Headache: 0
+                        </li>
+                    </ul>
+                </div>
+                <div aria-labelledby="pills-fast-tab" class="tab-pane fade card p-2" id="pills-fast" role="tabpanel"
+                     tabindex="0">
+                    <p class="lead">Fast</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Fast servers: limited waiting times
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Caching of results in your browser
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                            Speed: extreme
+                        </li>
+                    </ul>
+                </div>
+                <div aria-labelledby="pills-secure-tab" class="tab-pane fade card p-2" id="pills-secure" role="tabpanel"
+                     tabindex="0">
+                    <p class="lead">Secure & Private</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            The connection between your browser and AltMagick is secured using TLS
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            The extension uses the minimum possible authorisation: we're not watching you
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            We do not save the images you send to AltMagick.
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            A minimum of personal information to register
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                            Security: confirmed
+                        </li>
+                    </ul>
+                </div>
+                <div aria-labelledby="pills-ethics-tab" class="tab-pane fade card p-2" id="pills-ethics" role="tabpanel"
+                     tabindex="0">
+                    <p class="lead">Ethics</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            A serverless architecture that consumes resources only when you need them
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Every year, AltMagick donates part of its income to non-profits that help blind people
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-check2" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Totally free and open source code: no surprises when you use it
+                        </li>
+                        <li class="d-flex flex-row align-items-center gap-1">
+                            <svg class="bi bi-arrow-right" fill="currentColor" height="16" viewBox="0 0 16 16"
+                                 width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                            Ethics: total
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="display-3 text-center mt-4 pb-0 mb-0" id="howitworks">How it works?</h2>
+        <p class="lead text-center">It's so simple!</p>
+
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="card flex-column h-100">
+                    <svg class="d-flex flex-fill flex-grow-1 h-100 p-2" data-name="Layer 1"
+                         viewbox="0 0 780.98 639.55" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M539.18 637.16c-.14.8-.33 1.6-.55 2.39h-48.41c-.81-.79-1.61-1.59-2.39-2.39a110.129 110.129 0 0 1-19.98-27.49 82.374 82.374 0 0 1-7.79-24.7c-2.52-16.95.4-34.52 10.37-48.2.25-.35.51-.7.77-1.04.1.44.21.87.33 1.31a114.435 114.435 0 0 0 5.97 17.64q.27.66.57 1.32a120.592 120.592 0 0 0 25.15 36.53q3.6 3.585 7.49 6.84 3 2.505 6.16 4.8c5 3.64 10.54 7.22 14.91 11.55a25.592 25.592 0 0 1 7.16 11.63l.06.23a22.585 22.585 0 0 1 .18 9.58Z"
+                              fill="#f0f0f0"/>
+                        <path d="M522.9 637.16c-.02.8-.06 1.6-.12 2.39h-1.16c.07-.8.12-1.6.14-2.39a29.891 29.891 0 0 0-.16-4.44c-.55-4.78-2.54-9.42-6.76-12.04a18.793 18.793 0 0 0-3.92-1.8c-2.71-.92-5.6-1.4-8.36-2.07-.67-.16-1.33-.34-1.97-.53a25.776 25.776 0 0 1-9.74-5.17 40.89 40.89 0 0 1-8.48-10.86 89.112 89.112 0 0 1-3.99-7.93c-.16-.35-.32-.7-.46-1.05a104.579 104.579 0 0 1-7.49-54.5c.04-.36.09-.71.14-1.07.1-.72 1.21-.43 1.1.3-.05.35-.1.69-.14 1.04a102.764 102.764 0 0 0-.43 22.66c.04.39.08.77.11 1.14a102.364 102.364 0 0 0 7.91 30.31c.05.11.09.21.15.32v.02q1.485 3.36 3.21 6.6a44.158 44.158 0 0 0 8.09 11.21 24.69 24.69 0 0 0 9.75 5.71c.36.11.73.22 1.1.32.29.09.59.17.89.24 2.81.7 5.72 1.19 8.5 2.08a22.354 22.354 0 0 1 3.66 1.5 15.453 15.453 0 0 1 7.65 10.1 28.17 28.17 0 0 1 .78 7.91Z"
+                              fill="#fff"/>
+                        <path d="M478.891 592.146a15.369 15.369 0 0 1-18.666-6.9c-.36-.644.625-1.233.985-.588a14.231 14.231 0 0 0 17.376 6.383c.692-.256.993.85.305 1.105ZM500.173 615.327a29.622 29.622 0 0 0 1.537-21.533c-.22-.704.885-1.009 1.105-.305a30.811 30.811 0 0 1-1.645 22.404c-.32.666-1.315.097-.997-.566ZM470.757 559.761a8.7 8.7 0 0 0 6.625-4.923c.311-.67 1.307-.1.998.565a9.748 9.748 0 0 1-7.318 5.463.592.592 0 0 1-.705-.4.576.576 0 0 1 .4-.705Z"
+                              fill="#fff"/>
+                        <path d="M559.76 637.16c.02.53.01 1.05-.01 1.57-.01.27-.02.55-.04.82H514.4c-.19-.8-.37-1.59-.55-2.39a146.126 146.126 0 0 1-2.93-18.28c-.04-.41-.08-.81-.11-1.23v-.01a112.429 112.429 0 0 1-.1-18.26v-.01c.27-3.32.7-6.62 1.3-9.92a82.288 82.288 0 0 1 8.57-24.25c.02-.03.03-.06.05-.09 8.2-15.08 21.12-27.38 37.33-32.31h.01l.01-.01c.41-.11.82-.23 1.23-.35-.18.41-.36.84-.53 1.26-.01.01-.02.01-.01.02a113.93 113.93 0 0 0-5.84 17.64c-.12.47-.24.93-.34 1.4v.01a120.721 120.721 0 0 0-1.9 44.42q.66 4.5 1.65 8.94c.63 2.85 1.38 5.67 2.23 8.46 1.71 5.59 3.83 11.44 4.79 17.21v.01a34.711 34.711 0 0 1 .5 5.35Z"
+                              fill="#f0f0f0"/>
+                        <path d="M559.43 532.94c-.25.25-.5.5-.75.76-.01.01-.02.01-.01.02a101.918 101.918 0 0 0-13.96 17.8c-.21.32-.41.65-.6.98a101.502 101.502 0 0 0-11.94 28.99c-.03.1-.05.21-.08.32-.56 2.38-1.03 4.79-1.41 7.21a44.211 44.211 0 0 0-.3 13.82 24.512 24.512 0 0 0 4.35 10.43 2.077 2.077 0 0 0 .13.18c.18.25.37.51.56.75.18.24.37.48.56.72 2.66 3.27 5.75 6.32 7.56 10.18a14.095 14.095 0 0 1 1.14 3.66 15.937 15.937 0 0 1-.88 8.4c-.08.2-.16.41-.24.61-.25.61-.53 1.2-.83 1.78h-1.3a20.792 20.792 0 0 0 1.13-2.39 14.992 14.992 0 0 0 .94-8.64 11.844 11.844 0 0 0-.59-1.98c-1.57-4.05-4.76-7.19-7.47-10.48a36.02 36.02 0 0 1-1.62-2.11 25.592 25.592 0 0 1-4.3-9.49 40.858 40.858 0 0 1-.24-13.78 84.168 84.168 0 0 1 1.6-8.73c.07-.38.16-.75.26-1.12a102.828 102.828 0 0 1 7.13-19.88 104.298 104.298 0 0 1 19.7-28.15l.01-.01c.24-.25.49-.5.74-.75.52-.52 1.23.38.71.9Z"
+                              fill="#fff"/>
+                        <path d="M531.386 582.115a15.369 15.369 0 0 1-10.75-16.748c.1-.73 1.241-.609 1.14.123a14.231 14.231 0 0 0 10.031 15.559c.707.211.281 1.276-.421 1.066ZM534.422 613.436a29.622 29.622 0 0 0 14.19-16.267c.25-.696 1.315-.273 1.067.421a30.811 30.811 0 0 1-14.802 16.898c-.656.34-1.108-.714-.455-1.052ZM544.389 551.36a8.7 8.7 0 0 0 8.254.057c.652-.348 1.103.707.456 1.052a9.748 9.748 0 0 1-9.132-.044.592.592 0 0 1-.322-.744.576.576 0 0 1 .744-.322Z"
+                              fill="#fff"/>
+                        <circle cx="602.287" cy="72.401" fill="#2f2e41" r="42.148"/>
+                        <path d="m583.038 604.544-16.259-3.389 5.336-64.325 23.997 5.002-13.074 62.712z"
+                              fill="#ffb6b6"/>
+                        <path d="m584.78 596.19-17.2-4.66-2.75-.75-2.29 11.01-10.3 4.34-12.59 5.3-.02.01-4.77 2.01-.27.12c-.16.07-.31.14-.46.22h-.01c-.1.05-.2.11-.3.16a7.223 7.223 0 0 0-2.04 1.77 7.036 7.036 0 0 0 4.1 11.21l3.12.65 4.5.94 1.18.24 14.58 3.04v.01l7.22 1.5 7.54-9.8-.21 11.32 11.16 2.33.38.08.01-.08 4.86-39.49Z"
+                              fill="#2f2e41"/>
+                        <path d="m667.928 587.822-14.252 8.528-39.675-50.912 21.033-12.586 32.894 54.97z"
+                              fill="#ffb6b6"/>
+                        <path d="m691.79 610.29-23.24-32.39-5 2.6-15.81 8.23-2.53 1.31 5.78 9.65-12.57 27.61a7.025 7.025 0 0 0 5.39 9.86 7.107 7.107 0 0 0 2.06 0 6.872 6.872 0 0 0 2.56-.92l26.82-16.05-1.09-12.31 7.52 8.47Z"
+                              fill="#2f2e41"/>
+                        <path d="m630.909 295.182-78.275-3.01-4.515-81.285h90.316l-7.526 84.295z" fill="#ffb8b8"/>
+                        <path d="M680.593 350.965a12.538 12.538 0 0 1 .74-19.212l-14.21-42.229 22.384 5.916 10.064 39.194a12.606 12.606 0 0 1-18.978 16.33Z"
+                              fill="#ffb6b6"/>
+                        <circle cx="595.85" cy="86.566" fill="#ffb8b8" r="29.809"/>
+                        <path d="m626.25 66-30.239-23.642L571.25 48l-9.95 34.263 14.812-.74 4.138-12.532v12.325l6.836-.341 3.966-19.951 2.48 21.239 24.298-.644L626.25 66zM551.13 274.108s-26.08 45.327-.902 114.1l69.542 177.325 33.245-19.654-33.888-76.342 27.566-93.445a162.402 162.402 0 0 0 5.75-65.387c-1.986-16.432-9.885-24.099-20.029-39.607-33.875 21.849-79.822 13.178-81.285 3.01Z"
+                              fill="#2f2e41"/>
+                        <path d="m585.788 456.036-23.211 107.821 33.577 6.33 19.121-90.639-29.487-23.512z"
+                              fill="#2f2e41"/>
+                        <path d="m616.835 124-38.54.514-12.542 15.927-20.194 4.762-5.248 30.328c-2.624 15.163.162 24.765 7.87 38.082l.924 26.198-1.02 1.854a4.246 4.246 0 0 0 1.28 5.522 8.675 8.675 0 0 0-.239 5.709l.498 1.644s1.435 11.484 82.81-.594a8.024 8.024 0 0 0 6.781-6.893 5.991 5.991 0 0 0 1.11-6.903l-.166-.332.836-.984a6.443 6.443 0 0 0 .326-7.923l11.695-83.662-24.159-7.524Z"
+                              fill="#e4e4e4"/>
+                        <path d="m643.368 155.257 9.648-8.008s8.577 2.536 14.568 19.43S694.13 311.74 694.13 311.74l-24.084-12.042-34.151-94.165Z"
+                              fill="#e4e4e4"/>
+                        <path d="M429.102 291.707a12.538 12.538 0 0 0 14.381-12.76l41.66-15.803-18.774-13.551-36.682 17.084a12.606 12.606 0 0 0-.585 25.03Z"
+                              fill="#ffb6b6"/>
+                        <path d="m556.746 154.526-6.54-10.697s-8.937-.374-20.068 13.677c-5.707 7.203-42.689 68.989-42.689 68.989L453.25 255l28 10 33-14 37-61Z"
+                              fill="#e4e4e4"/>
+                        <path d="M698.923 79.018c-8.778-9.952-14.324-22.26-20.062-34.225-5.738-11.964-11.995-24.053-21.77-33.027-9.775-8.975-23.86-14.357-36.558-10.503s-21.85 18.992-16.466 31.12l.45 1.946c30.43 1.257 59.691 18.908 74.998 45.238 7.225 12.428 11.692 26.813 21.91 36.924a43.063 43.063 0 0 0 72.062-20.138c-25.17 10.38-56.554 3.083-74.564-17.335Z"
+                              fill="#2f2e41"/>
+                        <path d="M780.98 638.35a1.201 1.201 0 0 1-1.19 1.2h-353.3a1.195 1.195 0 0 1 0-2.39h353.3a1.2 1.2 0 0 1 1.19 1.19ZM419.42 594H18.83A18.851 18.851 0 0 1 0 575.17V294.83A18.851 18.851 0 0 1 18.83 276h400.59a18.754 18.754 0 0 1 18.327 14.507 18.467 18.467 0 0 1 .503 4.323v280.34A18.851 18.851 0 0 1 419.42 594ZM18.83 282A12.845 12.845 0 0 0 6 294.83v280.34A12.845 12.845 0 0 0 18.83 588h400.59a12.845 12.845 0 0 0 12.83-12.83V294.83a12.45 12.45 0 0 0-.336-2.917l-.005-.018A12.938 12.938 0 0 0 419.42 282Z"
+                              fill="#3f3d56"/>
+                        <path d="M434.83 291.21A15.858 15.858 0 0 0 419.42 279H18.83A15.846 15.846 0 0 0 3 294.83v280.34A15.846 15.846 0 0 0 18.83 591h400.59a15.846 15.846 0 0 0 15.83-15.83V294.83a15.408 15.408 0 0 0-.42-3.62Z"
+                              fill="#e83283"/>
+                        <path d="M171.173 302.42c-4.74-2.401-10.443-3.422-15.405-1.52-4.774 1.83-8.263 6.134-10.26 10.84-1.998 4.707-2.697 9.846-3.378 14.913-.27 2.018-.288 4.565 1.518 5.507a3.512 3.512 0 0 0 3.88-.863 12.963 12.963 0 0 0 2.273-3.562 33.786 33.786 0 0 1 29.149-17.804l4.826 2.162c-3.898-3.612-7.863-7.271-12.603-9.673Z"
+                              fill="#ff6582"/>
+                        <path d="M223.412 344.522c-3.746-6.195-8.185-12.81-15.135-14.832-8.05-2.343-16.32 2.31-23.333 6.903a679.923 679.923 0 0 0-60.51 44.582l.022.24 45.152-3.113c10.875-.75 22.123-1.603 31.732-6.748 3.647-1.952 7.202-4.56 11.334-4.74 5.134-.226 9.61 3.359 13.128 7.105 20.81 22.159 26.83 56.045 50.177 75.514a740.891 740.891 0 0 0-52.567-104.91ZM77.083 494.566a244.88 244.88 0 0 1 32.53 3.068 252.736 252.736 0 0 1 91.383 33.91 245.023 245.023 0 0 1 26.678 18.879q1.556 1.267 3.092 2.56c.657.552 1.612-.393.95-.95a247.591 247.591 0 0 0-26.528-19.456 251.818 251.818 0 0 0-28.823-15.774A255.807 255.807 0 0 0 145.7 504.86a252.286 252.286 0 0 0-31.901-7.869 247.677 247.677 0 0 0-32.575-3.621q-2.07-.091-4.14-.147a.672.672 0 0 0 0 1.343ZM74.507 452.11c19.512 1.365 39.03 2.752 58.464 4.996a439.932 439.932 0 0 1 57.833 10.187 265.745 265.745 0 0 1 48.895 17.322 205.81 205.81 0 0 1 41.204 25.669 159.535 159.535 0 0 1 32.431 35.14q1.68 2.517 3.253 5.103c.45.737 1.612.063 1.16-.678a157.02 157.02 0 0 0-31.27-36.638 200.558 200.558 0 0 0-40.452-26.973 256.026 256.026 0 0 0-47.337-18.233 406.036 406.036 0 0 0-57.73-11.269c-19.632-2.523-39.375-4.053-59.115-5.453q-3.668-.26-7.336-.516c-.862-.06-.859 1.283 0 1.343Z"
+                              fill="#fff"/>
+                        <path d="M72.557 456.66c19.512 1.365 39.03 2.752 58.464 4.996a439.932 439.932 0 0 1 57.833 10.187 265.745 265.745 0 0 1 48.895 17.322 205.81 205.81 0 0 1 41.204 25.669 159.535 159.535 0 0 1 32.431 35.14q1.68 2.517 3.253 5.103c.45.737 1.612.063 1.16-.678a157.02 157.02 0 0 0-31.27-36.638 200.558 200.558 0 0 0-40.452-26.973 256.026 256.026 0 0 0-47.337-18.233 406.036 406.036 0 0 0-57.73-11.269c-19.632-2.523-39.375-4.053-59.115-5.453q-3.668-.26-7.336-.516c-.862-.06-.859 1.283 0 1.343Z"
+                              fill="#fff"/>
+                        <path d="M352.666 534.709q-3.452-4.359-6.855-8.758-27.723-35.856-52.115-74.134-16.568-25.997-31.493-52.993-7.106-12.834-13.822-25.87-5.211-10.107-10.19-20.336a411.112 411.112 0 0 1-2.79-5.865c-2.162-4.611-4.284-9.245-6.563-13.794-2.597-5.185-5.758-10.62-10.526-14.104a14.361 14.361 0 0 0-7.482-2.878c-3.881-.251-7.463 1.352-10.83 3.102a348.64 348.64 0 0 0-68.556 47.276 356.908 356.908 0 0 0-55.697 61.826c-.492.703-1.657.032-1.16-.676q2.935-4.15 5.987-8.211a358.88 358.88 0 0 1 91.622-85.462q8.912-5.776 18.16-11.01c3.107-1.76 6.228-3.496 9.402-5.126 3.112-1.599 6.416-3.036 9.971-3.09 12.098-.187 18.361 13.513 22.664 22.732q2.028 4.352 4.106 8.677 7.85 16.42 16.306 32.54 5.218 9.953 10.665 19.79 16.95 30.631 36.033 60.022 25.279 38.932 54.112 75.393c.528.671-.416 1.63-.95.949Z"
+                              fill="#fff"/>
+                        <path d="m284.367 423.524 18.024-6.593 8.949-3.273a91.519 91.519 0 0 1 8.835-3.043 13.938 13.938 0 0 1 7.996.102 18.43 18.43 0 0 1 6.238 3.867 50.617 50.617 0 0 1 5.115 5.463c1.949 2.342 3.868 4.708 5.797 7.066q11.937 14.598 23.718 29.324 11.78 14.725 23.403 29.575 11.652 14.886 23.143 29.897 1.408 1.84 2.813 3.68c.518.678 1.685.01 1.16-.678q-11.576-15.162-23.314-30.2-11.766-15.073-23.695-30.02-11.928-14.945-24.018-29.76-3.012-3.692-6.034-7.375c-1.7-2.071-3.38-4.164-5.244-6.092-3.421-3.539-7.696-6.666-12.812-6.75a24.73 24.73 0 0 0-8.715 1.915c-3.014 1.09-6.02 2.2-9.029 3.302l-18.15 6.638-4.538 1.66c-.805.294-.457 1.593.358 1.295Z"
+                              fill="#fff"/>
+                        <path d="m194.704 313.101-1.206.592a32.464 32.464 0 0 0-61.51 11.703 32.13 32.13 0 0 0 5.305 20.525l-1.12.743a33.461 33.461 0 0 1-5.525-21.375 33.807 33.807 0 0 1 64.056-12.188Z"
+                              fill="#ff6582"/>
+                        <path d="M106.543 349.198a29.099 29.099 0 0 0-29.307 2.095 417.989 417.989 0 0 1 47.556 11.1c-6.487-3.802-11.562-9.758-18.25-13.195ZM77.146 351.277l-1.763 1.433a26.09 26.09 0 0 1 1.853-1.417ZM333.73 423.59c-1.774-2.16-3.693-4.421-6.346-5.299l-2.478.098a281.04 281.04 0 0 0 74.855 85.577Z"
+                              fill="#fff"/>
+                        <path d="M130.249 359.59c-.703-.784-1.402-1.567-2.11-2.351-5.578-6.17-11.564-12.268-19.224-15.805a27.892 27.892 0 0 0-11.686-2.708 33.349 33.349 0 0 0-12.133 2.646 69.77 69.77 0 0 0-5.373 2.44c-2.01 1.012-3.985 2.09-5.95 3.179q-5.534 3.062-10.925 6.393-10.725 6.629-20.779 14.27-5.212 3.961-10.208 8.184-4.648 3.922-9.107 8.054c-.636.587-1.585-.363-.95-.949.784-.73 1.577-1.455 2.37-2.172q3.357-3.035 6.823-5.954 6.32-5.333 12.966-10.253 10.336-7.656 21.383-14.274 5.52-3.304 11.193-6.33a97.06 97.06 0 0 1 3.466-1.77 55.245 55.245 0 0 1 8.238-3.353 29.307 29.307 0 0 1 12.442-1.222 32.394 32.394 0 0 1 11.48 3.971c7.522 4.205 13.356 10.706 19.033 17.05.573.645-.372 1.598-.95.954Z"
+                              fill="#fff"/>
+                        <path d="M35.666 373.557h-1.95v-63.991h68.5v1.95h-66.55v62.041zM404.534 373.557h-1.95v-62.041h-66.55v-1.95h68.5v63.991zM404.534 560.434h-68.5v-1.95h66.55v-62.041h1.95v63.991zM102.216 560.434h-68.5v-63.991h1.95v62.041h66.55v1.95z"
+                              fill="#2f2e41"/>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Upload an image</h5>
+                        <p class="card-text">With the AltMagick extension, all you have to do is right-click and click
+                            on AltMagick in the menu to send the image to our servers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card flex-column h-100">
+                    <svg class="d-flex flex-fill flex-grow-1 h-100 p-2" data-name="Layer 1"
+                         viewbox="0 0 847.62 386.288" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="779.266" cy="180.31" fill="#f2f2f2" r="38"/>
+                        <circle cx="779.266" cy="180.31" fill="#e6e6e6" r="10"/>
+                        <path d="M777.44 180.523c4.211 3.437 5.495 8.853 4.711 14.083a24.452 24.452 0 0 1-8.394 14.68c-5.009 4.453-11.119 7.462-17.014 10.542a123.752 123.752 0 0 0-15.575 9.455c-18.961 13.78-33.286 33.403-41.484 55.3-8.184 21.86-10.38 46.672-4.161 69.327 3.077 11.21 9.302 23.303 20.898 27.521 9.244 3.362 21.864 1.196 26.57-8.33 5.057-10.234-1.997-21.738-11.084-26.818-11.778-6.586-25.847-1.773-36.44 4.893-11.664 7.339-21.04 17.87-33.216 24.448a41.739 41.739 0 0 1-17.844 5.205 44.69 44.69 0 0 1-16.909-2.612 57.273 57.273 0 0 1-27.661-21.471c-7.735-11.243-11.197-25.025-11.828-38.525-1.413-30.206 10.52-58.465 20.094-86.478a264.21 264.21 0 0 0 11.519-44.86 232.406 232.406 0 0 0 2.545-46.388c-.633-13.713-1.986-28.054-8.039-40.579-5.322-11.013-15.049-20.027-27.346-22.3a27.277 27.277 0 0 0-16.44 1.89c-1.754.8-.231 3.386 1.514 2.59 10.883-4.965 23.746-.135 31.784 7.881 9.387 9.36 12.834 23.184 14.364 35.94a225.59 225.59 0 0 1-7.968 89.992c-8.347 28.352-21.476 55.521-24.506 85.226-1.382 13.554-.672 27.567 3.66 40.565a63.359 63.359 0 0 0 20.079 29.565c8.842 7.149 19.72 12.019 31.171 12.561 12.854.61 24.127-5.121 34.1-12.744 10.68-8.165 20.508-18.239 33.447-22.817 5.898-2.087 12.617-3.06 18.673-1.052a23.43 23.43 0 0 1 12.452 10.012c2.63 4.374 3.601 9.842 1.2 14.541-2.256 4.418-6.661 6.973-11.43 7.847a22.18 22.18 0 0 1-14.724-2.501c-5.224-2.984-9.047-7.991-11.725-13.281-5.34-10.55-7.134-23.108-7.407-34.817a115.287 115.287 0 0 1 4.349-33.853 119.456 119.456 0 0 1 36.089-57.53 105.961 105.961 0 0 1 13.974-10.288c5.38-3.316 11.123-5.966 16.607-9.095 5.397-3.078 10.716-6.757 14.432-11.823a25.435 25.435 0 0 0 4.887-14.95 16.766 16.766 0 0 0-5.803-13.073c-1.484-1.21-3.62.9-2.122 2.122Z"
+                              fill="#ccc"/>
+                        <path d="M422.686 355.31a87.34 87.34 0 0 0 44.47 13.94 20.85 20.85 0 0 1-.95 1.96 25.067 25.067 0 0 1-7.6 8.55 24.97 24.97 0 0 1-39.34-20.42v-4.03ZM515.956 356.49v2.85a24.96 24.96 0 0 1-46.88 11.95 20.848 20.848 0 0 1-.99-2.01c.73.02 1.45.03 2.18.03a87.467 87.467 0 0 0 45.69-12.82ZM549.596 55.11c-.75-.11-1.51-.18-2.27-.23a83.981 83.981 0 0 1 1.67 62.71c.76-.09 1.51-.21 2.26-.35a31.502 31.502 0 0 0-1.66-62.13ZM393.206 54.88c-.76.05-1.52.12-2.27.23a31.502 31.502 0 0 0-1.66 62.13c.75.14 1.5.26 2.26.35a83.981 83.981 0 0 1 1.67-62.71Z"
+                              fill="#3f3d56"/>
+                        <path d="M549.596 55.11a85.997 85.997 0 1 0 6.67 33.2 86.115 86.115 0 0 0-6.67-33.2Zm-.6 62.48a83.981 83.981 0 1 1 5.27-29.28 84.122 84.122 0 0 1-5.27 29.28Z"
+                              fill="#3f3d56"/>
+                        <path d="M514.266 68.81h-88a17.5 17.5 0 0 0 0 35h88a17.5 17.5 0 0 0 0-35ZM470.266 191.31a89.997 89.997 0 0 0-4.06 179.9c.95.05 1.91.08 2.87.08.4.02.79.02 1.19.02a90 90 0 0 0 0-180Zm45.69 165.18a87.467 87.467 0 0 1-45.69 12.82c-.73 0-1.45-.01-2.18-.03q-.465 0-.93-.03a88.051 88.051 0 1 1 48.8-12.76Z"
+                              fill="#3f3d56"/>
+                        <path d="M533.433 259.143H494.1a10.334 10.334 0 0 1 0-20.667h39.333a10.334 10.334 0 0 1 0 20.667Z"
+                              fill="#3f3d56"/>
+                        <circle cx="496.722" cy="248.81" fill="#f2f2f2" r="5.244"/>
+                        <circle cx="513.766" cy="248.81" fill="#f2f2f2" r="5.244"/>
+                        <circle cx="530.811" cy="248.81" fill="#e83283" r="5.244"/>
+                        <path d="M164.625 381.698c8.993-7.6 14.455-19.603 13.023-31.288s-10.305-22.429-21.814-24.91-24.627 4.388-28.123 15.63c-1.924-21.675-4.14-44.257-15.664-62.715-10.434-16.713-28.507-28.672-48.093-30.812s-40.208 5.941-52.424 21.4-15.206 37.934-6.65 55.683c6.302 13.075 17.913 22.805 30.079 30.721 38.812 25.256 86.96 33.789 132.772 27.046Z"
+                              fill="#f2f2f2"/>
+                        <path d="M30.9 253.992a317.625 317.625 0 0 1 44.263 43.954 322.163 322.163 0 0 1 34.908 51.663 320.844 320.844 0 0 1 14.948 31.651c.898 2.2-2.675 3.158-3.562.982a315.276 315.276 0 0 0-28.808-54.505 317.26 317.26 0 0 0-38.636-47.73 316.5 316.5 0 0 0-25.726-23.403c-1.844-1.501.783-4.101 2.612-2.612Z"
+                              fill="#fff"/>
+                        <circle cx="161.576" cy="35" fill="#2f2e41" r="31"/>
+                        <path d="M277.194 148.511a10.778 10.778 0 0 1-2.149 2.373 11.002 11.002 0 0 1-16.227-2.498 10.24 10.24 0 0 1-.537-.937l-48.85-4.714a18.013 18.013 0 0 1-15.887-14.5l-2.773-14.616 19.065-2.966 3.42 11.708 47.629 11.7a10.49 10.49 0 0 1 1.17-.89 11.003 11.003 0 0 1 15.139 15.34Z"
+                              fill="#ffb8b8"/>
+                        <path d="m214.428 120.594-21.296 5.753a4.505 4.505 0 0 1-5.518-3.17l-7.46-27.613a12.399 12.399 0 0 1 23.005-8.887l14.1 27.52a4.5 4.5 0 0 1-2.831 6.397Z"
+                              fill="#2f2e41"/>
+                        <path d="M202.092 374.133h12.259l5.833-47.288-18.095.001.003 47.287z" fill="#ffb8b8"/>
+                        <path d="m237.996 385.516-38.531.002V370.63l23.643-.001a14.887 14.887 0 0 1 14.888 14.886Z"
+                              fill="#2f2e41"/>
+                        <path d="m92.822 362.185 11.47 4.33 22.162-42.178-16.928-6.391-16.704 44.239z" fill="#ffb8b8"/>
+                        <path d="m122.39 385.517-36.047-13.61 5.259-13.927 22.12 8.352a14.887 14.887 0 0 1 8.668 19.185ZM201.705 363.15a4.497 4.497 0 0 1-4.276-3.115l-31.269-96.564a1.5 1.5 0 0 0-2.784-.177l-43.335 92.201a4.504 4.504 0 0 1-5.495 2.356l-17.067-5.69a4.509 4.509 0 0 1-2.928-5.418l26.545-100.547a229.082 229.082 0 0 0 6.003-32.427 73.51 73.51 0 0 1 23.717-46.877 34.205 34.205 0 0 0 10.766-20.462l.071-.503 38.874 6.137 24.623 200.93a4.52 4.52 0 0 1-3.296 4.89l-18.974 5.11a4.48 4.48 0 0 1-1.175.155Z"
+                              fill="#2f2e41"/>
+                        <circle cx="173.891" cy="41.291" fill="#ffb8b8" r="24.561"/>
+                        <path d="M198.111 156.349c-.077 0-.154-.002-.231-.006l-38.536-1.927a4.475 4.475 0 0 1-4.252-4.035l-5.265-51.328a23.172 23.172 0 0 1 29.325-24.67 22.474 22.474 0 0 1 8.246 4.242c27.108 22.262 18.367 62.598 15.042 74.43a4.482 4.482 0 0 1-4.329 3.294Z"
+                              fill="#e83283"/>
+                        <path d="M164.586 190.814a10.778 10.778 0 0 1-3.165-.474 11.002 11.002 0 0 1-6.91-14.894 10.238 10.238 0 0 1 .484-.967l-23.136-43.28a18.013 18.013 0 0 1 3.272-21.26l10.634-10.405 13.03 14.23-7.853 9.334 16.642 46.133a10.492 10.492 0 0 1 1.389.482 11.003 11.003 0 0 1-4.387 21.101Z"
+                              fill="#ffb8b8"/>
+                        <path d="m153.061 123.094-16.586-14.544a4.505 4.505 0 0 1-.416-6.35l18.857-21.505a12.399 12.399 0 0 1 20.142 14.229l-15.103 26.984a4.5 4.5 0 0 1-6.894 1.186ZM158.086 65.15c2.241.794 4.989 1.494 6.752-.154 1.722-1.608 1.408-4.55.394-6.718s-2.587-4.096-3.07-6.456c-.69-3.38 1.096-6.893 3.647-9.098s5.762-3.362 8.897-4.476l17.193-6.112c4.256-1.513 8.842-3.29 11.223-7.271 3.446-5.76.296-13.995-5.357-17.357s-12.792-2.735-18.89-.371c-3.373 1.307-6.582 3.108-10.07 4.029-6.884 1.816-14.712.186-20.762 4.068-5.266 3.379-7.708 10.273-7.531 16.724s2.553 12.595 5.058 18.495c1.49 3.51 3.083 7.06 5.607 9.852s6.173 4.744 9.817 4.23Z"
+                              fill="#2f2e41"/>
+                        <circle cx="135.576" cy="20" fill="#2f2e41" r="20"/>
+                        <path d="m297.788 135.45-.355-.048 1.337-9.723a5.68 5.68 0 0 0-4.854-6.401l-20.6-2.832a5.68 5.68 0 0 0-6.4 4.854l-7.333 53.34a5.68 5.68 0 0 0 4.854 6.402l20.6 2.831a5.68 5.68 0 0 0 6.4-4.854l5.045-36.697.355.05Z"
+                              data-name="Path 22"
+                              fill="#3f3d56"/>
+                        <path d="m293.268 122.13-2.564-.352a1.922 1.922 0 0 1-2.124 2.381l-11.257-1.547a1.922 1.922 0 0 1-1.402-2.866l-2.396-.33a4.046 4.046 0 0 0-4.56 3.458l-6.983 50.804a4.046 4.046 0 0 0 3.457 4.56l19.744 2.714a4.046 4.046 0 0 0 4.56-3.458l6.983-50.804a4.046 4.046 0 0 0-3.458-4.56Z"
+                              data-name="Path 23"
+                              fill="#fff"/>
+                        <circle cx="279.266" cy="153.31" fill="#e83283" r="11"/>
+                        <path d="M278.176 157.506a1.14 1.14 0 0 1-.687-.228l-.012-.009-2.585-1.98a1.148 1.148 0 1 1 1.397-1.823l1.675 1.284 3.956-5.16a1.148 1.148 0 0 1 1.61-.213l-.024.034.025-.033a1.15 1.15 0 0 1 .213 1.61l-4.654 6.07a1.149 1.149 0 0 1-.914.448Z"
+                              fill="#fff"/>
+                        <path d="M846.429 386.288H7.135a1.19 1.19 0 0 1 0-2.381h839.294a1.19 1.19 0 0 1 0 2.381Z"
+                              fill="#ccc"/>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Our AI does its ✨ magic ✨</h5>
+                        <p class="card-text">Our AI analyses your image and generates a short, clear transcription of
+                            its content. It only takes a few seconds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card flex-column h-100">
+                    <svg class="d-flex flex-fill flex-grow-1 h-100 p-2" data-name="Layer 1"
+                         viewbox="0 0 691.315 531.592" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M107.413 17.69c5.203.976 8.829 7.267 10.125 13.644s.875 13.082 1.4 19.629 2.303 13.499 6.659 17.19c-4.553-.843-8.713-4.515-10.873-9.597a7.602 7.602 0 0 1-2.498 6.93 14.102 14.102 0 0 1-6.062 2.667l-17.74 4.576c-3.223.831-6.634 1.65-9.744.304-3.987-1.726-6.506-6.563-8.485-11.223a65.927 65.927 0 0 1-5.131-17.329c-.782-6.11-.227-12.65 2.332-17.947a22.906 22.906 0 0 1 14.635-11.955c5.844-1.639 11.913-1.287 17.895-.926 3.398.205 6.922.451 9.927 2.445"
+                              fill="#2f2e41"/>
+                        <path d="M103.603 504.233h12.399l5.899-47.826-18.3.001.002 47.825z" fill="#a0616a"/>
+                        <path d="M120.128 505.35v-8.406l-3.26.199-13.268.786-3.071.188-2.348 28.152-.126 1.51h8.804l.283-1.5 1.279-6.812 3.301 6.813.724 1.499h23.34a5.274 5.274 0 0 0 5.241-5.251c.985-4.602-18.425-14.548-20.899-17.179Z"
+                              fill="#2f2e41"/>
+                        <path d="m254.973 466.497 10.446-6.68-20.795-43.47-15.417 9.86 25.766 40.29z" fill="#a0616a"/>
+                        <path d="m269.496 458.535-4.528-7.082-2.639 1.924-10.755 7.81-2.486 1.814 13.189 24.982.707 1.34 7.417-4.744-.57-1.415-2.592-6.428 6.452 3.96 1.416.874 19.665-12.575a5.274 5.274 0 0 0 1.586-7.247c-1.649-4.407-23.36-2.33-26.862-3.213Z"
+                              fill="#2f2e41"/>
+                        <path d="M527.685 70.742H323.28a4.408 4.408 0 1 1 0-8.816h204.406a4.408 4.408 0 0 1 0 8.816Z"
+                              fill="#e6e6e6"/>
+                        <path d="M527.685 164.742H323.28a4.408 4.408 0 1 1 0-8.816h204.406a4.408 4.408 0 0 1 0 8.816ZM631.16 117.773H323.28a4.408 4.408 0 1 1 0-8.816h307.88a4.408 4.408 0 0 1 0 8.816Z"
+                              fill="#e83283"/>
+                        <path d="M532.093 177.988a1 1 0 0 1-1-1V143.68a1 1 0 0 1 2 0v33.307a1 1 0 0 1-1 1ZM301.41 49.35a1 1 0 0 1 1-1h33.307a1 1 0 0 1 0 2H302.41a1 1 0 0 1-1-1Z"
+                              fill="#3f3d56"/>
+                        <path d="M319.063 83.988a1 1 0 0 1-1-1V49.68a1 1 0 1 1 2 0v33.307a1 1 0 0 1-1 1Z"
+                              fill="#3f3d56"/>
+                        <path d="m136.52 192.822-70.758 12.275.64 10.76s-13.611 46.446-6.339 60.493 12.741 50.834 12.741 50.834-26.982 143.37 5.638 146.268 71.747-.087 71.684-9.595-25.165-182.773-25.165-182.773 42.102 92.12 50.102 92.193 8 .073 8 7.073-10 1.512 0 11.756 23.89 55.16 35.945 54.702 67.307-33.316 67.181-41.387S136.52 192.822 136.52 192.822Z"
+                              fill="#2f2e41"/>
+                        <path d="m65.905 207.498 3.158-36.148-15.26-56.577s-3.158-28.218 6.051-30.32 12.549-2.268 12.549-2.268l6.211-11.835h20.977l10.472 10s14 9 14 13 14.914 83.425 12.457 85.213-3.08 4.163.231 4.475 9.312-1.688 5.312 2.312a24.545 24.545 0 0 0-5.543 9.653Z"
+                              fill="#e6e6e6"/>
+                        <path d="M218.973 199.599a9.62 9.62 0 0 0-12.766-7.187l-32.892-34.883-11.886 6.726L200.8 205.4a9.606 9.606 0 0 0 18.174-5.801Z"
+                              fill="#a0616a"/>
+                        <path d="M90.867 80.453s-5.875 22.45 3.154 30.298 16.109 16.21 20.683 17.99 26.325 28.09 30.616 28.21 1.95 5.459 8.184 6.954 7.893 1.21 8.177 2.87 18.004 18.966 18.004 18.966l12.83-11.633-61.604-78.916a40.47 40.47 0 0 0-40.044-14.74Z"
+                              fill="#e6e6e6"/>
+                        <path d="M241.945 192.567 54.54 274.184a4.408 4.408 0 1 1-3.52-8.083l187.405-81.617a4.408 4.408 0 0 1 3.52 8.083Z"
+                              fill="#e83283"/>
+                        <path d="M322.778 521.289a1.216 1.216 0 0 0 .882-2.108l-.084-.332.033-.08a3.267 3.267 0 0 1 6.026.023c.986 2.374 2.24 4.751 2.55 7.26a9.664 9.664 0 0 1-.17 3.324 38.744 38.744 0 0 0 3.524-16.091 37.395 37.395 0 0 0-.232-4.172q-.192-1.703-.533-3.382A39.193 39.193 0 0 0 327 489.12a10.43 10.43 0 0 1-4.337-4.5 7.956 7.956 0 0 1-.724-2.175 9.819 9.819 0 0 0 .637-3.386c.294-.447.821-.669 1.142-1.104 1.599-2.168 3.801-1.79 4.951 1.156 2.456 1.24 2.48 3.295.973 5.273-.959 1.258-1.09 2.96-1.932 4.306.087.111.177.219.263.33a39.446 39.446 0 0 1 4.117 6.522 16.398 16.398 0 0 1 .98-7.617c.936-2.26 2.693-4.164 4.24-6.118a3.366 3.366 0 0 1 5.994 1.652l.01.087q-.345.194-.675.413a1.65 1.65 0 0 0 .665 3.002l.034.005a16.417 16.417 0 0 1-.433 2.455c1.984 7.673-2.3 10.468-8.416 10.594-.135.069-.267.138-.402.204a40.263 40.263 0 0 1 2.168 10.2 38.19 38.19 0 0 1-.028 6.165l.01-.073a10.09 10.09 0 0 1 3.445-5.826c2.65-2.178 6.396-2.98 9.256-4.73a1.894 1.894 0 0 1 2.9 1.842l-.011.077a11.08 11.08 0 0 0-1.243.599q-.345.194-.675.412a1.65 1.65 0 0 0 .665 3.003l.034.005.07.01a16.431 16.431 0 0 1-3.023 4.733c-1.24 6.699-6.57 7.334-12.27 5.384h-.003a40.25 40.25 0 0 1-2.704 7.893h-9.659c-.035-.107-.066-.218-.097-.325a10.975 10.975 0 0 0 2.673-.16c-.717-.879-1.433-1.765-2.15-2.645a.6.6 0 0 1-.045-.052c-.364-.45-.73-.896-1.094-1.346a16.075 16.075 0 0 1 .47-4.096Z"
+                              fill="#f2f2f2"/>
+                        <path d="m1.19 531.285 389.726.307a1.19 1.19 0 0 0 0-2.381l-389.725-.308a1.19 1.19 0 0 0 0 2.382Z"
+                              fill="#cacaca"/>
+                        <circle cx="89.276" cy="41.5" fill="#a0616a" r="23.316"/>
+                        <path d="M79.126 42.91c-.042-1.958-3.246-2.27-4.424-.706s-.886 3.747-.537 5.674l2.507 13.858c.991 5.48 2.393 11.594 7.108 14.556-3.54 1.558-7.373 3.15-11.16 2.365s-7.03-5.12-5.213-8.534c-.904 2.58-1.863 5.255-4.117 6.973a5.2 5.2 0 0 1-5.042.88c-3.32-1.333-1.713-6.127-3.188-9.353-4.236-9.26-8.225-18.172-1.508-26.531.961-1.197.198-3.51.197-5.665-.006-11.629 11.854-21.938 23.183-24.56q.362-.084.696-.149a23.114 23.114 0 0 1 17.994 4.109c2.752-2.304 7.205-1.283 9.686 1.31s7.132 6.679 7.755 10.213-.725 6.853 1 10c-3.936.778-10.147-.513-13.073-3.259-1.886 3.655-6.744 4.332-10.856 4.43s-8.903.41-11.22 3.808"
+                              fill="#2f2e41"/>
+                        <path d="M343.763 0c-26.407.595-52.818 1.103-79.223 1.785-4.921.127-10.333.538-14.142 4.036-3.793 3.482-4.43 8.963-4.5 13.824-.191 13.02.126 26.066.198 39.086l.246 44.687c.01 1.93 2.451 1.854 3 0 7.63-25.797 26.275-51.594-.426-77.39-3.513-3.395-.682-10.605 1.481-15.165 2.26-4.764 7.444-5.777 12.24-6.01 6.156-.302 12.337-.303 18.498-.442l19.212-.433L343.763 3c1.928-.043 1.935-3.043 0-3ZM593.39 199.918c26.407-.595 52.818-1.102 79.223-1.785 4.921-.127 10.332-.538 14.142-4.035 3.793-3.483 4.43-8.964 4.5-13.825.191-13.02-.127-26.065-.198-39.086L690.81 96.5c-.01-1.93-2.783-1.921-3 0-2.909 25.798-31.097 51.599.426 77.39 3.78 3.094.681 10.605-1.482 15.165-2.26 4.764-7.444 5.777-12.24 6.011-6.155.3-12.336.303-18.497.442l-19.213.432-43.416.978c-1.927.043-1.934 3.043 0 3ZM402.385 478.807l-115.16-47.78a6.073 6.073 0 0 1-3.281-7.936l27.143-65.423a6.073 6.073 0 0 1 7.937-3.282l145.247 60.263a6.073 6.073 0 0 1 3.282 7.937l-14.66 35.335a38.647 38.647 0 0 1-50.508 20.886Z"
+                              fill="#f2f2f2"/>
+                        <path d="m395.03 471.562-79.826-33.12a30.918 30.918 0 0 1-16.69-40.36l5.159-12.433a30.918 30.918 0 0 1 40.36-16.69l92.26 38.278a30.918 30.918 0 0 1 16.69 40.36 44.394 44.394 0 0 1-57.953 23.965Z"
+                              fill="#fff"/>
+                        <path d="M389.909 409.945 344.486 391.1a1.566 1.566 0 1 1 1.2-2.893l45.423 18.846a1.566 1.566 0 0 1-1.2 2.893ZM377.11 440.795l-45.424-18.846a1.566 1.566 0 1 1 1.2-2.894l45.424 18.847a1.566 1.566 0 0 1-1.2 2.893Z"
+                              fill="#e6e6e6"/>
+                        <path d="m417.464 439.47-79.382-32.936a1.566 1.566 0 1 1 1.2-2.893l79.383 32.935a1.566 1.566 0 0 1-1.2 2.894ZM217.385 353.807l-115.16-47.78a6.073 6.073 0 0 1-3.281-7.936l27.143-65.423a6.073 6.073 0 0 1 7.937-3.282l145.247 60.263a6.073 6.073 0 0 1 3.282 7.937l-14.66 35.335a38.647 38.647 0 0 1-50.508 20.886Z"
+                              fill="#f2f2f2"/>
+                        <path d="m210.03 346.562-79.826-33.12a30.918 30.918 0 0 1-16.69-40.36l5.159-12.433a30.918 30.918 0 0 1 40.36-16.69l92.26 38.278a30.918 30.918 0 0 1 16.69 40.36 44.394 44.394 0 0 1-57.953 23.965Z"
+                              fill="#fff"/>
+                        <path d="M204.909 284.945 159.486 266.1a1.566 1.566 0 1 1 1.2-2.893l45.423 18.846a1.566 1.566 0 0 1-1.2 2.893ZM192.11 315.795l-45.424-18.846a1.566 1.566 0 1 1 1.2-2.894l45.424 18.847a1.566 1.566 0 0 1-1.2 2.893Z"
+                              fill="#e6e6e6"/>
+                        <path d="m232.464 314.47-79.382-32.936a1.566 1.566 0 1 1 1.2-2.893l79.383 32.935a1.566 1.566 0 0 1-1.2 2.894Z"
+                              fill="#f2f2f2"/>
+                        <path d="M141.874 240.703a9.62 9.62 0 0 0-9.157-11.436l-17.479-44.645-13.537 1.799 21.147 52.874a9.606 9.606 0 0 0 19.026 1.408Z"
+                              fill="#a0616a"/>
+                        <path d="M67.555 82.325s-13.836 18.63-8.393 29.282 8.886 21.056 12.465 24.415 13.925 35.892 17.86 37.605-.23 5.792 4.994 9.508 6.869 4.072 6.512 5.717 9.615 24.319 9.615 24.319l16.248-5.998-34.6-120.347Z"
+                              fill="#e6e6e6"/>
+                    </svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Your alt text is ready</h5>
+                        <p class="card-text">Paste it where you want. Whether it's for your website (WordPress, Webflow,
+                            etc.), a post on your social networks or in your code editor!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="display-3 text-center mt-4 pb-0 mb-0" id="pricing">Pricing</h2>
+        <p class="lead text-center">One plan, no bullshit.</p>
+
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="d-flex flex-column">
+                <div class="d-flex card flex-fill text-center col-lg-6 w-100" id="card-buy">
+                    <div class="d-flex card-body flex-column">
+                        <h1 class="card-title pricing-card-title pb-0 mb-0">€6<small
+                                class="text-body-secondary fw-light">/mo*</small></h1>
+
+                        <ul class="list-unstyled mt-2 mb-2">
+                            <li>500 credits per month</li>
+                            <li>A license that can be used on as many devices as you like</li>
+                        </ul>
+                        <a class="w-100 btn btn-lg btn-secondary" href="https://buy.altmagick.com"
+                           type="button">Sign-up</a>
+                        <small class="text-end mt-1">*tax not included</small>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-3">
+        <div class="col-md-6 d-flex flex-column align-items-start">
+            <h2 class="display-5" id="faq">Frequently Asked Questions</h2>
+            <p class="lead mt-3 d-sm-none d-md-block">Have another question? Contact me by <a
+                    class="link-secondary fw-bold"
+                    href="mailto:gaetan@altmagick.com">e-mail</a>.
+            </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+
+            <div class="accordion pt-0 flex-column w-100" id="accordionFaq">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+                            How long are credit valid for?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseOne">
+                        <div class="accordion-body">
+                            Credits are only valid for one month, and your usage counter is reset every month.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                            What happens if I cancel my subscription?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseTwo">
+                        <div class="accordion-body">
+                            When you cancel your subscription plan, automatic renewals will be turned off and you will
+                            not be charged going forward.<br>You will continue to have access to your current credits
+                            until the scheduled renewal date.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                            How much credit does each image cost?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseThree">
+                        <div class="accordion-body">
+                            Each image costs 1 credit.<br>
+                            We only charge for successfully generated alt text.<br>
+                            If we are unable to generate an alt text for an image, you will not be charged.<br>
+                            If the alt text is in your browser's cache (image with alt text already generated) you will
+                            also not be charged.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+                            Are my images stored?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseFour">
+                        <div class="accordion-body">
+                            We do not save your images or alt text generated on our servers.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+                            What kinds of images are supported?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseFive">
+                        <div class="accordion-body">
+                            AltMagick supports a wide range of formats such as JPG, PNG, WEBP, HEIC, HEIF, ...<br>
+                            If AltMagick does not support the format, an automatic conversion will be attempted.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseSix" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSix" data-bs-toggle="collapse" type="button">
+                            Which browsers is AltMagick compatible with?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseSix">
+                        <div class="accordion-body">
+                            The AltMagick browser extension is available for Google Chrome and Mozilla Firefox.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseSeven" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
+                            Is AltMagick restricted to certain websites?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseSeven">
+                        <div class="accordion-body">
+                            AltMagick works on all websites.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseEight" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseEight" data-bs-toggle="collapse" type="button">
+                            How many languages does AltMagick support?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseEight">
+                        <div class="accordion-body">
+                            AltMagick supports more than 40 languages:
+                            <ul>
+                                <li>Arabic</li>
+                                <li>Bengali</li>
+                                <li>Bulgarian</li>
+                                <li>Chinese (Simplified)</li>
+                                <li>Chinese (Traditional)</li>
+                                <li>Croatian</li>
+                                <li>Czech</li>
+                                <li>Danish</li>
+                                <li>Dutch</li>
+                                <li>English</li>
+                                <li>Estonian</li>
+                                <li>Farsi</li>
+                                <li>Finnish</li>
+                                <li>French</li>
+                                <li>German</li>
+                                <li>Greek</li>
+                                <li>Gujarati</li>
+                                <li>Hebrew</li>
+                                <li>Hindi</li>
+                                <li>Hungarian</li>
+                                <li>Indonesian</li>
+                                <li>Italian</li>
+                                <li>Japanese</li>
+                                <li>Kannada</li>
+                                <li>Korean</li>
+                                <li>Latvian</li>
+                                <li>Lithuanian</li>
+                                <li>Malayalam</li>
+                                <li>Marathi</li>
+                                <li>Malay</li>
+                                <li>Norwegian</li>
+                                <li>Polish</li>
+                                <li>Portuguese</li>
+                                <li>Romanian</li>
+                                <li>Russian</li>
+                                <li>Serbian</li>
+                                <li>Slovak</li>
+                                <li>Slovenian</li>
+                                <li>Spanish</li>
+                                <li>Swahili</li>
+                                <li>Swedish</li>
+                                <li>Tamil</li>
+                                <li>Telugu</li>
+                                <li>Thai</li>
+                                <li>Turkish</li>
+                                <li>Ukrainian</li>
+                                <li>Urdu</li>
+                                <li>Vietnamese</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseNine" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseNine" data-bs-toggle="collapse" type="button">
+                            Where do I contact someone if I have a question or an issue?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseNine">
+                        <div class="accordion-body">
+                            You can contact me at <a href="mailto:gaetan@altmagick.com">gaetan@altmagick.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="collapseTen" aria-expanded="false" class="accordion-button collapsed"
+                                data-bs-target="#collapseTen" data-bs-toggle="collapse" type="button">
+                            I want a refund
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFaq" id="collapseTen">
+                        <div class="accordion-body">
+                            AltMagick does not suit you? 😭<br>
+                            No problem, you can get a refund by e-mailing me at <a
+                                href="mailto:gaetan@altmagick.com">gaetan@altmagick.com</a>.
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="lead mt-3 d-md-none d-sm-block text-center">Have another question? Contact me by <a
+                        class="link-secondary fw-bold"
+                        href="mailto:gaetan@altmagick.com">e-mail</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container mt-4 pb-2">
+    <div class="footer row">
+        <div class="col-12 col-md">
+            <a class="d-inline-flex text-decoration-none" href="/">
+                <img alt="icon" class="me-1" height="40" src="assets/images/altmagick.png" width="40">
+                <span class="fs-4">AltMagick</span>
+            </a>
+            <small class="d-block text-muted">© 2024 - <a class="text-decoration-none"
+                                                          href="https://github.com/AltMagick">Source code</a></small>
+            <div class="d-flex flex-row align-items-center">
+                <span class="me-1">Made with ❤️ by </span>
+                <a href="https://gaetan.me">
+                    <div class="profile">
+                        <img alt="Gaëtan, the maker behind AltMagick" src="./assets/images/avatar.jpg">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d-sm-block d-md-none mt-3"></div>
+        <div class="col-6 col-md">
+            <h5 class="text-muted">Navigation</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#why">Why AltMagick?</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#howitworks">How it works?</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#pricing">Pricing</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5 class="text-muted">Payments</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="https://buy.altmagick.com/">Buy</a></li>
+                <li><a class="link-secondary text-decoration-none" href="https://buy.altmagick.com/billing">Billing</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5 class="text-muted">Legal</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="/legal.pdf">Legal notice</a></li>
+                <li><a class="link-secondary text-decoration-none" href="/terms.pdf">General terms and conditions of
+                    sales</a></li>
+                <li><a class="link-secondary text-decoration-none" href="/privacy.pdf">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5 class="text-muted">More</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="https://mononames.com">mononames</a>
+                </li>
+                <li><a class="link-secondary text-decoration-none" href="https://favicon.zip">favicon.zip</a>
+                </li>
+                <li><a class="link-secondary text-decoration-none" href="https://byebackground.com">ByeBackground</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
