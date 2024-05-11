@@ -34,7 +34,7 @@ jobs:
     - name: Uploading to the Web server
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        local-dir: ./dist
+        local-dir: ./dist/
         server-dir: ${{ secrets.ftp_dir }}
         server: ${{ secrets.ftp_server }}
         username: ${{ secrets.ftp_username }}
