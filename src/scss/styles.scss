@@ -67,7 +67,11 @@ header .altmagick-header-bar {
     padding-bottom: 5rem;
     margin-top: 10px;
     border-radius: $border-radius;
-    backdrop-filter: saturate(200%) blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2), inset -1px -1px rgba(255, 255, 255, 0.1), 1px 3px 24px -1px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2) 70%);
+    border: none;
 }
 
 header .altmagick-header-bar ul {
@@ -318,6 +322,82 @@ code:not(pre code) {
     height: 50px;
     border-radius: $border-radius;
 }
+
+
+@media (max-width: 768px) {
+    .altmagick-cta {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .altmagick-pill {
+        margin-right: auto;
+        display: block;
+        margin-left: auto;
+    }
+
+    .altmagick-cta-buttons {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .altmagick-cta video {
+        margin-top: 1rem;
+    }
+
+    #card-past {
+        width: 75%;
+    }
+
+    .altmagick-desc {
+        padding-top: 0 !important;
+
+        padding: 0rem !important;
+        padding-top: 1rem;
+
+        margin-bottom: 0 !important;
+
+        margin-top: 0 !important;
+
+        margin: 0rem !important;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #card-past {
+        width: 50%;
+    }
+    .altmagick-desc {
+        padding-top: 0 !important;
+
+        padding: 2rem !important;
+        padding-top: 2rem;
+
+        margin-bottom: 0 !important;
+
+        margin-top: 0 !important;
+
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
 
 .accordion-item {
     background-image: none;
