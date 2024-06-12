@@ -1,4 +1,4 @@
-## AltMagick Legal Notice
+# AltMagick Legal Notice
 ## Edition
 
 This website is published by Gaëtan LE HEURT-FINOT  
