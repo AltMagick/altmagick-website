@@ -4,34 +4,46 @@ Effective Date: May 10, 2024.
 
 ## 1. Presentation
 
-The present terms and conditions of sales apply to all commercial transactions carried out on the AltMagick website, between Gaëtan LE HEURT-FINOT, individual entrepreneur (EI) and publisher of the website, and any individual or legal entity wishing to subscribe to AltMagick, hereinafter referred to as "the Customer".
+The present terms and conditions of sales apply to all commercial transactions carried out on the AltMagick website,
+between Gaëtan LE HEURT-FINOT, individual entrepreneur (EI) and publisher of the website, and any individual or legal
+entity wishing to subscribe to AltMagick, hereinafter referred to as "the Customer".
 
 AltMagick is a service that makes it easy to generate alt text for images, as a monthly subscription.  
 The alt text generation service is accessible via an Internet browser extension for Google Chrome and Mozilla Firefox.
 
 ## 2. Object
 
-The purpose of this contract is to define the terms and conditions under which the User may take out a paying monthly subscription to the AltMagick website.
+The purpose of this contract is to define the terms and conditions under which the User may take out a paying monthly
+subscription to the AltMagick website.
 
 ## 3. Prices and payment
 
 The price of the monthly subscription is set at a maximum of €6 excluding tax.
 Payment is made by credit card or other digital means via the Lemon Squeezy secure payment system.
-AltMagick is not responsible for additional bank fees, interest charges, finance charges, overdraft charges, or other fees resulting from charges billed by AltMagick.  
-Currency exchange settlements are based on agreements between you and your credit card provider. 
-The processing of credit and debit card transactions is facilitated through the third-party payment platform, Lemon Squeezy.  
-By using Lemon Squeezy, you agree to be bound by [Lemon Squeezy’s Terms of Service](https://www.lemonsqueezy.com/terms).  
-AltMagick is not liable for any payments and monetary transactions, and you expressly understand that all such transactions are handled by Lemon Squeezy.  
-You are responsible for all transactions processed through Lemon Squeezy, and while AltMagick acts as a broker for refunds, the actual refunds will occur through your Lemon Squeezy account.  
-AltMagick is not liable for any loss or damage resulting from erroneous or invalid transactions processed with Lemon Squeezy, including those due to network communication errors.  
-It is crucial that you do not process stolen or unauthorized credit cards through Lemon Squeezy, and you must verify the successful processing of any transaction you initiate.  
-All transaction information exchanged between AltMagick and Lemon Squeezy’s systems is encrypted, ensuring the security of sensitive information and preventing unauthorized access by third parties.
+AltMagick is not responsible for additional bank fees, interest charges, finance charges, overdraft charges, or other
+fees resulting from charges billed by AltMagick.  
+Currency exchange settlements are based on agreements between you and your credit card provider.
+The processing of credit and debit card transactions is facilitated through the third-party payment platform, Lemon
+Squeezy.  
+By using Lemon Squeezy, you agree to be bound
+by [Lemon Squeezy’s Terms of Service](https://www.lemonsqueezy.com/terms).  
+AltMagick is not liable for any payments and monetary transactions, and you expressly understand that all such
+transactions are handled by Lemon Squeezy.  
+You are responsible for all transactions processed through Lemon Squeezy, and while AltMagick acts as a broker for
+refunds, the actual refunds will occur through your Lemon Squeezy account.  
+AltMagick is not liable for any loss or damage resulting from erroneous or invalid transactions processed with Lemon
+Squeezy, including those due to network communication errors.  
+It is crucial that you do not process stolen or unauthorized credit cards through Lemon Squeezy, and you must verify the
+successful processing of any transaction you initiate.  
+All transaction information exchanged between AltMagick and Lemon Squeezy’s systems is encrypted, ensuring the security
+of sensitive information and preventing unauthorized access by third parties.
 
 ## 4. Subscription duration
 
 The monthly subscription takes effect from the date of subscription and is renewed tacitly each month.  
 Customers may cancel their subscription at any time from their account.  
-However, the subscription will end at the end of the current month, and the Customer will not be entitled to any refund for the current period.
+However, the subscription will end at the end of the current month, and the Customer will not be entitled to any refund
+for the current period.
 
 ## 5. Content and features
 
@@ -39,33 +51,48 @@ The monthly subscription allows the Customer to use AltMagick extensions to gene
 The Customer has 2000 credits per month.  
 The Customer is only charged for successfully generated alt text.  
 If AltMagick is unable to generate an alt text for an image, the customer will not be charged.  
-If the alt text is in the Customer's browser cache (image with alt text already generated) the Customer will not be charged.
+If the alt text is in the Customer's browser cache (image with alt text already generated) the Customer will not be
+charged.
 
 ## 6. Liability and warranty
 
 Gaëtan LE HEURT-FINOT undertakes to provide a quality service.  
 However, it cannot guarantee the absence of errors or service interruptions.  
-Gaëtan LE HEURT-FINOT may not be held liable for any direct or indirect damage resulting from the use or inability to use the AltMagick website or its content.  
-Gaëtan LE HEURT-FINOT does not warrant that the content of AltMagick will meet your specific requirements or that your use of AltMagick will be uninterrupted, timely, secure or error-free.
+Gaëtan LE HEURT-FINOT may not be held liable for any direct or indirect damage resulting from the use or inability to
+use the AltMagick website or its content.  
+Gaëtan LE HEURT-FINOT does not warrant that the content of AltMagick will meet your specific requirements or that your
+use of AltMagick will be uninterrupted, timely, secure or error-free.
 
 ## 7. Protection of personal data
 
 Gaëtan LE HEURT-FINOT undertakes to comply with current legislation on the protection of personal data.  
 Users have the right to access, rectify and delete data concerning them.  
-To exercise these rights, the User may contact the company at the following address: 8, rue Saint-Pierre - 60480 Bucamps - FRANCE or by phone on [+33 (0) 7 62 44 52 47](tel:+33762445247) or by email at the following address: [gaetan@altmagick.com](mailto:gaetan@altmagick.com).
+To exercise these rights, the User may contact the company at the following address: 8, rue Saint-Pierre - 60480
+Bucamps - FRANCE or by phone on [+33 (0) 7 62 44 52 47](tel:+33762445247) or by email at the following
+address: [gaetan@altmagick.com](mailto:gaetan@altmagick.com).
 
 ## 8. Intellectual property rights
 
 The AltMagick website and its content (texts, images, etc.) are protected by current intellectual property laws.  
 Any unauthorized reproduction or use of the site or its content is strictly prohibited and may result in legal action.
 
-## 9. Applicable law and disputes
+## 9. Use of Artificial Intelligence services and data
 
-These general terms and conditions of sale are governed by French law. 
+AltMagick utilizes various Artificial Intelligence ("AI") models and services.  
+All data produced by these models and services and provided to you is intended solely for your use at your discretion.  
+AltMagick do not use the output data produced for training or developing other AI models, nor do we sell or share this output data with any third parties.  
+Any input data you send to AltMagick (e.g., an image file) for generating output from an AI model is used exclusively for generating the requested output to return to you.  
+AltMagick do not use the input data for training or developing other AI models, nor do we permanently store, sell, or share the input data you provide when using it.
+
+## 10. Applicable law and disputes
+
+These general terms and conditions of sale are governed by French law.
 In the event of a dispute, the parties shall endeavor to settle their differences amicably.  
 Failing this, any dispute relating to the present terms and conditions of sale will be referred to the competent courts.
 
-## 10. Acceptance of terms and conditions
+## 11. Acceptance of terms and conditions
 
-By subscribing on the AltMagick website, the Customer acknowledges having read and accepted these terms and conditions of sale without reservation.  
-Gaëtan LE HEURT-FINOT reserves the right to modify these general terms and conditions of sales at any time, and such modifications will be effective immediately upon posting on the AltMagick website.  
+By subscribing on the AltMagick website, the Customer acknowledges having read and accepted these terms and conditions
+of sale without reservation.  
+Gaëtan LE HEURT-FINOT reserves the right to modify these general terms and conditions of sales at any time, and such
+modifications will be effective immediately upon posting on the AltMagick website.  
