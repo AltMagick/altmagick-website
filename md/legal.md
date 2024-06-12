@@ -26,6 +26,12 @@ Code APE 2620Z
 VAT NUMBER: FR 22 424 761 419  
 Registered office: 2, rue Kellermann - 59100 Roubaix - France  
 
+Google Cloud Platform
+Google LLC
+1600 Amphitheatre Parkway
+Mountain View, CA 94043
+USA
+
 ## Payment
 
 Lemon Squeezy LLC  
