@@ -36,7 +36,7 @@ However, the subscription will end at the end of the current month, and the Cust
 ## 5. Content and features
 
 The monthly subscription allows the Customer to use AltMagick extensions to generate alt text for images.   
-The Customer has 500 credits per month.  
+The Customer has 2000 credits per month.  
 The Customer is only charged for successfully generated alt text.  
 If AltMagick is unable to generate an alt text for an image, the customer will not be charged.  
 If the alt text is in the Customer's browser cache (image with alt text already generated) the Customer will not be charged.
@@ -54,7 +54,6 @@ Gaëtan LE HEURT-FINOT undertakes to comply with current legislation on the prot
 Users have the right to access, rectify and delete data concerning them.  
 To exercise these rights, the User may contact the company at the following address: 8, rue Saint-Pierre - 60480 Bucamps - FRANCE or by phone on [+33 (0) 7 62 44 52 47](tel:+33762445247) or by email at the following address: [gaetan@altmagick.com](mailto:gaetan@altmagick.com).
 
-
 ## 8. Intellectual property rights
 
 The AltMagick website and its content (texts, images, etc.) are protected by current intellectual property laws.  
@@ -69,4 +68,4 @@ Failing this, any dispute relating to the present terms and conditions of sale w
 ## 10. Acceptance of terms and conditions
 
 By subscribing on the AltMagick website, the Customer acknowledges having read and accepted these terms and conditions of sale without reservation.  
-Gaëtan LE HEURT reserves the right to modify these general terms and conditions of sales at any time, and such modifications will be effective immediately upon posting on the AltMagick website.  
+Gaëtan LE HEURT-FINOT reserves the right to modify these general terms and conditions of sales at any time, and such modifications will be effective immediately upon posting on the AltMagick website.  
