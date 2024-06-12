@@ -1,4 +1,4 @@
-## AltMagick General Terms and Conditions of Sales
+# AltMagick General Terms and Conditions of Sales
 
 Effective Date: May 10, 2024.
 
