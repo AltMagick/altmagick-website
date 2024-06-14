@@ -22,7 +22,8 @@ jobs:
       with:
         input_dir: md
         output_dir: ./dist
-        build_html: false
+        build_html: true
+        build_pdf: false
         table_of_contents: false
 
     - name: Generate the sitemap
