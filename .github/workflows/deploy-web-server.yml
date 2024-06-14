@@ -17,13 +17,13 @@ jobs:
     - name: Setup Node.js & build
       run: npm install && npm run build
 
-    - name: Build PDF
+    - name: Build HTML
       uses: baileyjm02/markdown-to-pdf@v1
       with:
         input_dir: md
         output_dir: ./dist
         build_html: true
-        build_pdf: false
+        build_pdf: true
         table_of_contents: false
 
     - name: Generate the sitemap
