@@ -21,9 +21,9 @@ jobs:
       uses: baileyjm02/markdown-to-pdf@v1
       with:
         input_dir: md
-        output_dir: ./dist
+        output_dir: ./dist/
         build_html: true
-        build_pdf: true
+        build_pdf: false
         table_of_contents: false
 
     - name: Generate the sitemap
