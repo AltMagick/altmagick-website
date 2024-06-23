@@ -182,7 +182,7 @@ code:not(pre code) {
 .text-gradient {
     background: linear-gradient(20deg, #40e0d0, #ff8c00, #ff0080);;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #c0c0c045;
 }
 
 .btn-primary {
