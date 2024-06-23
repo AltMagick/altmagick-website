@@ -1,6 +1,6 @@
 # AltMagick General Terms and Conditions of Sales
 
-Effective Date: June 14, 2024.
+Effective Date: June 23, 2024.
 
 ## 1. Presentation
 
@@ -18,7 +18,7 @@ subscription to the AltMagick website.
 
 ## 3. Prices and payment
 
-The price of the monthly subscription is set at a maximum of €6 excluding tax.
+The price of the monthly subscription is set at a maximum of $9.99 including VAT.
 Payment is made by credit card or other digital means via the Lemon Squeezy secure payment system.
 AltMagick is not responsible for additional bank fees, interest charges, finance charges, overdraft charges, or other
 fees resulting from charges billed by AltMagick.  
