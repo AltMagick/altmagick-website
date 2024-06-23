@@ -179,6 +179,12 @@ code:not(pre code) {
     color: #fff !important;
 }
 
+.text-gradient {
+    background: linear-gradient(20deg, #40e0d0, #ff8c00, #ff0080);;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .btn-primary {
     color: #fff !important;
 }
