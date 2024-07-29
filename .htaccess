@@ -9,6 +9,9 @@ RewriteRule ^extension/chrome$ https://chromewebstore.google.com/detail/altmagic
 # Redirect /firefox to the Mozilla Firefox extension
 RewriteRule ^extension/firefox$ https://addons.mozilla.org/fr/firefox/addon/altmagick/ [L,R=301]
 
+# Redirect /buy to the buy page
+RewriteRule ^buy$ https://buy.altmagick.com/buy/2ce00998-d26a-4e61-83bf-f1e6f1d6cb30 [L,R=301]
+
 # Redirect /help to the help e-mail
 RewriteRule ^help$ mailto:gaetan@altmagick.com [L,R=301]
 
